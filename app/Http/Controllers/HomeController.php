@@ -4,16 +4,19 @@ namespace mdbaapp\Http\Controllers;
 
 use mdbaapp\Http\Requests;
 use Illuminate\Http\Request;
+use mdbaapp\modulesAdmin;
 
 class HomeController extends Controller
 {
+    private $modulos;
     /**
      * Create a new controller instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct(modulesAdmin $modulos)
     {
+        $this->modulos = $modulos;
         $this->middleware('auth');
     }
 
@@ -24,6 +27,11 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        return view('home', ['modulos' => $this->getDados()]);
+    }
+    
+    private function getDados()
+    {
+        return ['dados' => $this->modulos->getModulos()->get()];
     }
 }

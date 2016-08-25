@@ -1,0 +1,34 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24/08/2016, 18:54:10
+    Author     : forlinux
+*/
+
+html body#app-layout div.container div.row div.col-md-10.col-md-offset-1 div.panel.panel-default div.panel-body div#app-module-content{
+    overflow-y: hidden;
+    width: 100%;
+    display: table;
+}
+
+.panel-body > #app-module-content > .app-modules-content-rows {
+    display: table-cell;
+    width: 300px;
+    overflow-y: hidden;
+    text-align: center;
+    padding: 0 auto;
+    margin: 0 auto;
+}
+
+.panel-body > #app-module-content > .app-modules-content-rows > .app-modules-content-rows-header
+{
+    border-right: 1px solid grey;
+    font-size: 1.5em;
+}
+
+.no-border-rigth {
+    border-right: none !important;
+}
