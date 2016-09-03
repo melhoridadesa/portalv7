@@ -1,0 +1,17 @@
+Sistema medico: Que possua LOGIN pelo CRM e senha
+Uma pessoa tem que ter o cadastro de pessoa e o paciente e vinculado
+a tabela de pessoas, ou seja, 1 --- 1
+
+Cadastrar o hosptial e vincular o medico ao hosptial.
+
+Para esse sistema o medico contratante "Vai Mandando" 
+solicotou que ele deseja realizar o cadastro dos pacientes
+e que nesse cadastro seja possivel:
+  - Inserir - Editar - Visualizar - Excluir
+
+  E que no sistema possua um menu iterativo que venha do
+  banco de dados e tambem que as paginas sejam dinamicas
+  que venham do banco de dados.
+
+  Deve possuir um cadastro de medico que tambem devera:
+  - Inserir - Editar - Visualizar - Excluir
